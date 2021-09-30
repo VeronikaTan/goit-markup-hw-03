@@ -23,6 +23,16 @@ body {
 img {
   display: block;
 }
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
 /*.....LOGO.............................*/
 .logo-head {
   font-family: "Raleway", sans-serif;
@@ -35,15 +45,7 @@ img {
 
 /*..........HEADER.....................................*/
 /*portfolio*/
-.filter {
-  font-style: Medium;
-  font-size: 14px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  font-weight: 500;
-  list-style-type: none;
-  text-decoration: none;
-}
+
 /*both*/
 .list {
   text-decoration: none;
@@ -59,6 +61,8 @@ img {
   letter-spacing: 0.06em;
   font-style: black;
   text-transform: uppercase;
+  margin-bottom: 30px;
+  text-align: center;
 }
 /*styles*/
 .hero {
@@ -75,6 +79,8 @@ img {
   letter-spacing: 0.06em;
   text-align: center;
   cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid transparent;
 }
 .button-hero:hover,
 .button-hero:focus {
@@ -82,19 +88,7 @@ img {
   color: var(--button-background-color);
 }
 
-/*style*/
-.button-menu {
-  display: inline-block;
-  text-decoration: none;
-  background-color: var(--button-background-color);
-  border-color: transparent;
-  cursor: pointer;
-  list-style: none;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-}
+/*portfolio*/
 
 .button-menu:hover,
 .button-menu:focus,
@@ -103,9 +97,23 @@ img {
   border-color: transparent;
   color: var(--button-background-color);
 }
+.button-menu {
+  border-radius: 4px;
+  display: inline-block;
+  padding: 6px 22px;
+  border: 1px solid transparent;
+}
 
 /*............PAGE-NAVIGATION...........*/
 
+.head-contacts {
+  display: flex;
+  margin-left: auto;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
 .page-navigation {
   font-size: 16px;
   line-height: 1;
@@ -113,7 +121,13 @@ img {
   color: var(--primary-text-color);
   text-decoration: none;
   font-weight: 500;
+  display: block;
 }
+.header-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
 .current-page {
   color: var(--accent-color);
 }
