@@ -191,7 +191,7 @@ header {
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  font-style: medium;
+
   font-weight: 500;
   margin-top: 30px;
   text-align: center;
@@ -206,7 +206,7 @@ header {
 }
 .list-title {
   font-size: 14px;
-  font-style: bold;
+  font-weight: 900;
   line-height: 1.1;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
@@ -230,7 +230,7 @@ header {
 .qualities-item {
   margin-left: 30px;
   margin-top: 30px;
-  flex-basis: calc((100%-120px) / 4);
+  flex-basis: calc((100% - 120px) / 4);
 }
 .job-info {
   font-weight: 700;
@@ -271,7 +271,9 @@ header {
   flex-basis: calc((100% - 120px) / 4);
   margin-left: 30px;
   margin-top: 30px;
-  /*border: 0.1px solid rgba(0, 0, 0, 0.2);*/
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .filter {
   display: flex;
@@ -305,7 +307,7 @@ header {
   list-style-type: none;
   font-weight: 700;
   font-size: 18px;
-  font-style: bold;
+
   line-height: 2;
   letter-spacing: 0.06em;
   list-style-type: none;
@@ -347,12 +349,13 @@ footer {
 
 .logo-footer {
   font-family: "Raleway", sans-serif;
-  font-size: 1.2;
+  line-height: 1.2;
   color: var(--thirdparty-text-color);
   font-size: 26px;
   text-decoration: none;
   font-weight: 700;
   margin-bottom: 20px;
+  font-size: 26px;
 }
 
 .place:hover,
