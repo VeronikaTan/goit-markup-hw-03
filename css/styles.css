@@ -65,14 +65,15 @@ p {
 .hero-title {
   font-weight: 900;
   color: var(--thirdparty-text-color);
-  align-self: center;
+
   line-height: 1.16;
   font-size: 44px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 0;
+
+  padding-top: 200px;
+  padding-left: 452px;
+  padding-right: 452px;
 }
 /*styles*/
 .hero {
@@ -94,7 +95,9 @@ p {
   border: 1px solid transparent;
   padding-top: 10px;
   padding-left: 32px;
-  align-self: center;
+  align-self: baseline;
+  margin-bottom: 200px;
+  margin-top: 30px;
 }
 .button-hero:hover,
 .button-hero:focus {
@@ -210,7 +213,9 @@ header {
 }
 .qualities {
   display: flex;
+  justify-content: center;
 }
+
 .job-info {
   font-weight: 700;
   font-size: 36px;
@@ -222,12 +227,25 @@ header {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
+.thumb {
+  display: flex;
+  justify-content: center;
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.team {
+  display: flex;
+  justify-content: center;
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+}
 .filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-  margin-top: 94px;
+  padding-top: 94px;
 }
 
 .description {
