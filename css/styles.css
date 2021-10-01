@@ -33,6 +33,15 @@ img {
   width: 1px !important;
   overflow: hidden;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
 /*.....LOGO.............................*/
 .logo-head {
   font-family: "Raleway", sans-serif;
@@ -60,13 +69,15 @@ img {
   line-height: 1.16;
   font-size: 44px;
   letter-spacing: 0.06em;
-  font-style: black;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 /*styles*/
 .hero {
   background-color: var(--footer-background-color);
+  text-align: center;
 }
 /*.............BUTTON.................................*/
 /*style*/
@@ -81,6 +92,9 @@ img {
   cursor: pointer;
   border-radius: 4px;
   border: 1px solid transparent;
+  padding-top: 10px;
+  padding-left: 32px;
+  align-self: center;
 }
 .button-hero:hover,
 .button-hero:focus {
@@ -194,7 +208,9 @@ header {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
-
+.qualities {
+  display: flex;
+}
 .job-info {
   font-weight: 700;
   font-size: 36px;
@@ -236,6 +252,10 @@ header {
   margin-left: 30px;
   margin-top: 30px;
 }
+/*.list-pic:nth-last-child(n + 7) {
+  margin-bottom: 94px;
+}
+*/
 .underpicture {
   border: 1px solid #eeeeee;
 }
